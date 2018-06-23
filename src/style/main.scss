@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+
+  background-color: #00bfc5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 900'%3E%3Cpath fill='%23A0E2DB' d='M0 504 0 899 1600 899 1600 120z'/%3E%3Cpath fill='%23CBF2F3' d='M1600 567 1600 899 0 899 0 165z'/%3E%3Cpath fill='%23719D71' d='M0 680 0 899 1600 899 1600 300z'/%3E%3Cpath fill='%237EB67E' d='M1600 719 1600 899 0 899 0 353z'/%3E%3Cpath fill='%23004D66' d='M0 788 0 899 1600 899 1600 625z'/%3E%3C/svg%3E");
+  /* background by SVGBackgrounds.com */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin-top: 4em;
+  }
+
+h1 {
+  
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+}
+form {
+  text-align: center;
+}
+#searchFormBoard, #searchFormLimit {
+  border: none;
+  outline: none;
+  border-bottom: solid white .5px;
+  border-left: solid white .5px;
+  padding: 0 0 1px 7px;
+  background: none;
+  margin: 1em .2em;
+  font-size: 1.2em;
+  color: white;
+
+  &::-webkit-input-placeholder {
+  color: white;
+  }   
+}
+
+input[type="submit"] {
+  background: #719D71;
+  border: none;
+  border-radius: 3px;  
+  color: white;
+  display: block;
+  font-size: .8em;
+  margin: 0 auto;
+  padding: .8em;
+  text-transform: uppercase;  
+
+  &:hover {
+    
+    cursor: pointer;
+  }
+
+  .error #searchFormBoard {
+
+    outline: solid 1px red;
+  }
+}
+
+ul {
+  width: 85%;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: start;
+  list-style-type: none;
+
+  li {
+
+    margin: .5em 0;
+    background: #CBF2F3;
+    border: #FF5500;
+    border-radius: 10px;
+    border: 1px black inset;
+    cursor: pointer;
+
+    &:hover {
+
+      background: #004D66;
+    }
+
+    h2 {
+
+      margin: 3px;
+      font-weight: 20;
+    }
+
+    p {
+
+      margin: 3px;
+    }
+
+    a:link {
+    
+      text-decoration: none;
+      color: rgb(194, 98, 50);
+
+      &:hover{
+
+        color: #CBF2F3;
+      }
+    }
+  }
+}
